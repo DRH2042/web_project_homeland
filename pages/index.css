@@ -1,0 +1,34 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/gallery.css);
+@import url(../blocks/footer.css);
+
+/* 1. Móvil pequeño: hasta 544px */
+@media screen and (max-width: 544px) {
+  /* Aquí van tus ajustes para dispositivos de 320px–544px */
+  /* Ejemplo:
+    .header__title {
+      font-size: 32px;
+      margin-top: 60px;
+    }
+    */
+}
+
+/* 2. Móvil grande / tablet pequeña: 545px–1024px */
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+  /* Ajustes para 545px–1024px */
+  /* Ejemplo:
+    .recipes__videos {
+      flex-direction: column;
+      gap: 24px;
+    }
+    */
+}
+
+/* 3. Escritorio: 1025px en adelante */
+@media screen and (min-width: 1025px) {
+  /* Ajustes para pantallas de escritorio (+1024px) */
+  /* Usualmente aquí solo corregirás detalles menores si el diseño “base” es ya de escritorio */
+}

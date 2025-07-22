@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 188;
+  height: 52;
+  padding-top: 20px;
+}
+
+.header__logo {
+  width: 32px;
+  height: 32px;
+}
+
+.header__title {
+  width: 189px;
+  height: 11px;
+  padding-top: 17px;
+}
