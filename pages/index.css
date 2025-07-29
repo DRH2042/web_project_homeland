@@ -5,30 +5,197 @@
 @import url(../blocks/gallery.css);
 @import url(../blocks/footer.css);
 
-/* 1. Móvil pequeño: hasta 544px */
-@media screen and (max-width: 544px) {
-  /* Aquí van tus ajustes para dispositivos de 320px–544px */
-  /* Ejemplo:
-    .header__title {
-      font-size: 32px;
-      margin-top: 60px;
-    }
-    */
-}
+/* 2. Móvil grande / tablet pequeña: 544px–1024px */
+@media screen and (min-width: 544px) and (max-width: 1024px) {
+  .header__logo {
+    width: 32px;
+    height: 31px;
+    padding-top: 30px;
+  }
 
-/* 2. Móvil grande / tablet pequeña: 545px–1024px */
-@media screen and (min-width: 545px) and (max-width: 1024px) {
-  /* Ajustes para 545px–1024px */
-  /* Ejemplo:
-    .recipes__videos {
-      flex-direction: column;
-      gap: 24px;
-    }
-    */
+  .header__title {
+    width: 254px;
+    height: 14px;
+    padding-top: 21px;
+  }
+  /* Bloques con cambios - Deben de aplicarse o no? Si > Cambiar en blocks No> Eliminar este parte
+  .gallery__lead {
+    width: 720px;
+    height: 255px;
+    padding-top: 186px;
+  } */
+
+  .gallery__lead-title {
+    font-family: "Inter", sans-serif;
+    max-width: 530px;
+    max-height: 158px;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 79px;
+    text-align: center;
+    padding-top: 90px;
+  }
+
+  .gallery__lead-subtitle {
+    max-width: 720px;
+    max-height: 72px;
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .gallery__image {
+    max-width: 768px;
+    max-height: 480px;
+    padding-top: 30px;
+    object-fit: cover;
+  }
+  /*
+  .gallery__intro {
+    max-width: 720px;
+    max-height: 573px;
+  }*/
+
+  .gallery__intro-title {
+    max-width: 707px;
+    max-height: 147px;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 49px;
+    padding-top: 90px;
+  }
+
+  .gallery__intro-text {
+    max-width: 720px;
+    max-height: 136px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    padding-top: 50px;
+  }
+  .gallery__quote {
+    max-width: 720px;
+    max-height: 34px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    padding-top: 10px;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .gallery__intro-footer {
+    max-width: 720px;
+    max-height: 182px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    padding-top: 58px;
+  }
+
+  .footer__copyright {
+    max-width: 194px;
+    max-height: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 88px;
+    padding-bottom: 24px;
+    text-align: center;
+    color: #ffff;
+  }
 }
 
 /* 3. Escritorio: 1025px en adelante */
 @media screen and (min-width: 1025px) {
   /* Ajustes para pantallas de escritorio (+1024px) */
-  /* Usualmente aquí solo corregirás detalles menores si el diseño “base” es ya de escritorio */
+
+  .header__logo {
+    width: 32px;
+    height: 32px;
+    padding-top: 34px;
+  }
+
+  .header__title {
+    width: 255px;
+    height: 15px;
+    padding-top: 22px;
+  }
+  .gallery__lead-title {
+    font-family: "Inter", sans-serif;
+    max-width: 720px;
+    max-height: 200px;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    text-align: center;
+    padding-top: 91px;
+  }
+
+  .gallery__lead-subtitle {
+    max-width: 720px;
+    max-height: 72px;
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 32px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .gallery__image {
+    max-width: 984px;
+    max-height: 615px;
+    padding-top: 64px;
+    object-fit: cover;
+  }
+  .gallery__intro-title {
+    max-width: 830px;
+    max-height: 174px;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 58px;
+    padding-top: 92px;
+  }
+
+  .gallery__intro-text {
+    max-width: 738px;
+    max-height: 136px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    padding-top: 40px;
+  }
+  .gallery__quote {
+    max-width: 732px;
+    max-height: 34px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    padding-top: 10px;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .gallery__intro-footer {
+    max-width: 722px;
+    max-height: 182px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    padding-top: 32px;
+  }
+
+  .footer__copyright {
+    max-width: 194px;
+    max-height: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 92px;
+    padding-bottom: 24px;
+    text-align: center;
+    color: #ffff;
+  }
 }
