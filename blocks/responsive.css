@@ -94,7 +94,7 @@
     color: #ffff;
   }
 
-  .photo__grid {
+  .photo-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
@@ -235,7 +235,7 @@
     color: #ffff;
   }
 
-  .photo__grid {
+  .photo-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
