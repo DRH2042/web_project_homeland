@@ -1,0 +1,13 @@
+.photo__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 38px 16px 62px;
+  margin: auto;
+}
+
+.photo__grid-image {
+  object-fit: cover;
+  width: 288px;
+  height: 216px;
+}
