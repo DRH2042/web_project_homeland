@@ -1,4 +1,4 @@
-.photo__grid {
+.photo-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;

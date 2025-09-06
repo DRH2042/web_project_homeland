@@ -18,11 +18,13 @@
     "body"
     "button";
   padding-bottom: 50px;
+  gap: 16px;
 }
 
 .places__card-title {
   grid-area: title;
-  width: 288px;
+  width: 100%;
+  max-width: 288px;
   font-family: Inter;
   font-weight: 900;
   font-size: 32px;
@@ -51,8 +53,6 @@
 }
 
 .places__card-artist {
-  width: 288px;
-  height: 22px;
   font-family: Inter;
   font-weight: 400;
   font-size: 18px;
@@ -64,6 +64,9 @@
 
 .places__card-image {
   position: relative;
+  width: 100%;
+  overflow: hidden;
+  grid-area: image;
 }
 
 .places__card-image:hover {
@@ -72,9 +75,9 @@
 }
 
 .places__image {
-  grid-area: image;
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
@@ -83,6 +86,7 @@
   -webkit-border-radius: 10px;
   border-style: none;
   margin-top: 5px;
+  position: relative;
 }
 
 .places__card-body {
